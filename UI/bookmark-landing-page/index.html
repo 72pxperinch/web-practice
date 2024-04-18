@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+  <a href="../../index.html"><button type="button" class="btn btn-sm btn-outline-secondary" style="z-index: 1000; position: absolute; top: 10px; left: 10px;">Go back</button></a>
+
+  <div class="navigation-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img src="images/logo-bookmark.svg" alt="logo-bookmark" class="logo-bookmark"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link abc" href="#">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link abc" href="#footer">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link abc" href="#pricing">CONTACT</a>
+          </li>
+          <li class="nav-item login-button">
+            <a class="nav-link" href="#cta" >LOGIN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="row introduction">
+    <div class="col-lg-6 intro">
+      <h2>A Simple Bookmark Manager</h2>
+      <p>A clean and simple interface to organize your favourite websites. Open a new 
+        browser tab and see your sites load instantly. Try it for free.</p>
+      <div class="button-section col-lg-6">
+        <button class="button1">Get it on Chrome</button>
+        <button class="button2">Get it on Firefox</button>
+      </div>
+    </div>
+    <div class="col-lg-6 intro-img">
+      <img src="images/illustration-hero.svg" alt="">
+      <div class="bg-box1"></div>
+    </div>
+  </div>
+  <div class="features">
+    <h2>Features</h2>
+    <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+      Your bookmarks sync between your devices so you can access them on the go.</p>
+  </div>
+  <div class="pagination">
+    <div class="page-section">
+      <a class="active" id="1">Simple Bookmarking</a>
+      <a id="2">Speedy Searching</a>
+      <a id="3">Easy Sharing</a>
+    </div>
+    <div class="pagination-slider">
+      <input type="range" min="1" max="3" class="slider" id="myRange">
+    </div>
+  </div>
+
+  <div class="text">
+    <div class="row content1">
+      <div class="content-img col-lg-6">
+        <img src="images/illustration-features-tab-1.svg" alt="">
+        <div class="bg-box2"></div>
+      </div>
+      <div class="col-lg-6 bookmark-content">
+        <h2>Bookmark in one click</h2>
+        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          gives you complete control over how you manage your favourite sites.</p>
+          <button class="button1">More Info</button>
+      </div>
+    </div>
+    <!-- ------------------ jhkj -->
+    <div class="row content2">
+      <div class="content-img col-lg-6">
+        <img src="images/illustration-features-tab-2.svg" alt="">
+        <div class="bg-box2"></div>
+      </div>
+      <div class="col-lg-6 bookmark-content">
+        <h2>Intelligent search</h2>
+        <p>Our powerful search feature will help you find saved sites in no time at all. 
+          No need to trawl through all of your bookmarks.</p>
+          <button class="button1">More Info</button>
+      </div>
+    </div>
+
+    <!-- ------------------------ -->
+    <div class="row content3">
+      <div class="content-img col-lg-6">
+        <img src="images/illustration-features-tab-3.svg" alt="">
+        <div class="bg-box2"></div>
+      </div>
+      <div class="col-lg-6 bookmark-content">
+        <h2>Share your bookmarks</h2>
+        <p>Easily share your bookmarks and collections with others. Create a shareable 
+          link that you can send at the click of a button.</p>
+          <button class="button1">More Info</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="download-section">
+    <h2>Download the extension</h2>
+    <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+      got a favourite you’d like us to prioritize.</p>
+  </div>
+  <div class="row download-cards">
+    <div class="col-lg-4 dcard">
+      <img src="images/logo-chrome.svg" alt="" style="padding-bottom: 4%;width: 40%;">
+      <h4>Add to Chrome</h4>
+      <p>Minimum version 62</p>
+      <img src="images/bg-dots.svg" alt="" style="padding: 8% 0 12% 0;width: 100%;">
+      <button class="button1">Add & Install Extension</button>
+    </div>
+    <div class="col-lg-4 dcard dcard2">
+      <img src="images/logo-firefox.svg" alt="" style="padding-bottom: 4%;width: 40%;">
+      <h4>Add to Firefox</h4>
+      <p>Minimum version 55</p>
+      <img src="images/bg-dots.svg" alt="" style="padding: 8% 0 12% 0;width: 100%;">
+      <button class="button1">Add & Install Extension</button>
+    </div>
+    <div class="col-lg-4 dcard dcard3">
+      <img src="images/logo-opera.svg" alt="" style="padding-bottom: 4%;width: 40%;">
+      <h4>Add to Opera</h4>
+      <p>Minimum version 46</p>
+      <img src="images/bg-dots.svg" alt="" style="padding: 8% 0 12% 0;width: 100%;">
+      <button class="button1">Add & Install Extension</button>
+    </div>
+  </div>
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p>Here are some of our FAQs. If you have any other questions you’d like 
+      answered please feel free to email us.</p>
+  </div>
+  <div class="qna">
+    <hr>
+    <div class="qna-para">
+      <div class="arrow-para">
+        <p class="qn">What is Bookmark?</p>
+        <img src="images/icon-arrow.svg" alt="">
+      </div>
+      <p class="ans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+      justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+    </div>
+    <hr>
+    <div class="qna-para">
+      <div class="arrow-para">
+        <p class="qn">How can I request a new browser?</p>
+        <img src="images/icon-arrow.svg" alt="">
+      </div>
+      <p class="ans">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+      Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+      ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+      Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+    </div>
+    <hr>
+    <div class="qna-para">
+      <div class="arrow-para">
+        <p class="qn">Is there a mobile app?</p>
+        <img src="images/icon-arrow.svg" alt="">
+      </div>
+      <p class="ans">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+      urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+      sollicitudin ex et ultricies bibendum.</p>
+    </div>
+    <hr>
+    <div class="qna-para">
+      <div class="arrow-para">
+        <p class="qn">What about other Chromium browsers?</p>
+        <img src="images/icon-arrow.svg" alt="">
+      </div>
+      <p class="ans">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+      vitae neque eget nisl gravida pellentesque non ut velit.</p>
+    </div>
+    <hr>
+    <button class="button1"> More Info</button>
+  </div>
+  
+  <div class="footer-container">
+    <p style="letter-spacing: 3px; text-transform: uppercase; font-size: 14px;">35,000+ already joined</p>
+    <h2 style="color: white;">Stay up-to-date with what we’re doing</h2>
+    <form action="#" >
+      <input type="email" name="email" id="email" placeholder="Enter your email address">
+      <button class="button3">Contact Us</button>
+    </form>
+  </div>
+  <div class="footer row">
+    <div class="footer-left col-lg-6 ">
+        <img src="images/logo-bookmark2.svg" alt="">
+        <p>Features</p>
+        <p>Pricing</p>
+        <p>Contact</p>
+    </div>
+    <div class="footer-right col-lg-6">
+      <img src="images/icon-facebook.svg" alt="">
+      <img src="images/icon-twitter.svg" alt="" >
+    </div>
+  </div>
+  
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  <script>
+    var i=true;
+    var id=1;
+    const array=[1,2,3];
+    $(".slider").val(parseInt(id)); 
+    $(".content2,.content3").hide();
+    $(".qna-para").click(function(){
+      if(i){
+        $(this).find(".ans").show();
+        $(this).find("img").css({"transform":"rotate(180deg)","filter":"hue-rotate(100deg)"});
+        i=false;
+      }else{
+        $(this).find(".ans").hide();
+        $(this).find("img").css({"transform":"rotate(0deg)","filter":"none"});
+        i=true;
+      }
+    });
+    $(".page-section a").click(function(){
+      id=parseInt($(this).attr("id"));
+      $(".content"+JSON.stringify(id)).show();
+      array.forEach(element => {
+        if(element!=id){
+          $(".content"+JSON.stringify(element)).hide();
+        }
+      });
+      $(".page-section a").removeClass("active");
+      $(this).addClass("active");
+      $(".slider").val(parseInt(id)); 
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

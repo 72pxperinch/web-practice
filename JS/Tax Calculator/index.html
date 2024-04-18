@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="../../index.html"><button type="button" class="btn btn-sm btn-outline-secondary" style="z-index: 1000; position: absolute; top: 10px;color: #fff; left: 10px;">Go back</button></a>
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card">
+            <div class="card-body">
+                <form id="taxForm">
+                    <div class="form-group">
+                        <label for="income" >Enter gross annual income <div class="gues-tooltip" data-toggle="tooltip" data-placement="top" title="Gross annual income is your total salary in a year before any deductions"></div><span class="question-mark">?</span></label>
+                        <div class="tooltip-box">
+                            <input type="number" class="form-control" id="income" placeholder="Enter gross annual income">
+                            <div class="invalid-feedback" id="incomeError" data-toggle="tooltip" data-placement="top" title="This field is required. Please enter numbers only"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="extraIncome">Enter extra income <div class="gues-tooltip" data-toggle="tooltip" data-placement="top" title="This is the total income you get apart from your main job."></div><span class="question-mark">?</span></label>
+                        <div class="tooltip-box">
+                            <input type="number" class="form-control" id="extraIncome" placeholder="Enter extra income from other sources">
+                            <div class="invalid-feedback" id="extraIncomeError" data-toggle="tooltip" data-placement="top" title="This field is required. Please enter numbers only"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Select age group <div class="gues-tooltip" data-toggle="tooltip" data-placement="top" title="Example: If you are 25 years old. You belong to <40 age group"></div><span class="question-mark">?</span></label>
+                        <select class="form-control" id="age" placeholder="Select age group">
+                            <option value="<40">&lt; 40</option>
+                            <option value="≥40 &lt;60">&ge; 40 &lt; 60</option>
+                            <option value="≥60">&ge; 60</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="deductions">Enter total applicable deductions <div class="gues-tooltip" data-toggle="tooltip" data-placement="top" title="This is the amount which is exempted from tax payment"></div><span class="question-mark">?</span></label>
+                        <div class="tooltip-box">
+                            <input type="number" class="form-control" id="deductions" placeholder="Add total applicable deductions">
+                            <div class="invalid-feedback" id="deductionsError" data-toggle="tooltip" data-placement="top" title="This field is required. Please enter numbers only"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block" id="submitBtn">Submit</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="resultModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <h4 class="modal-title">Your overall income will be</h4>
+                <div class="modal-body" id="resultBody">
+                    <!-- Result will be shown here -->
+                </div>
+                <p>after tax deductions</p>
+                    <button type="button" class="modal-close btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>

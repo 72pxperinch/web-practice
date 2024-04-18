@@ -1,0 +1,172 @@
+body{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: hsl(0, 0%, 63%);
+}
+h2{
+    font-weight: 600;
+    color: black;
+    margin: 5% 0;
+}
+h4{
+    text-transform:uppercase;
+    color: black;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 2%;
+}
+.nav-bar{
+    padding: 3% 0;
+    width: 50%;
+    position:absolute;
+    color: white;
+    z-index: 1;
+}
+.nav-img{
+    display: inline-block;
+}
+.logo{
+    height: 17px;
+    padding-left: 30px;
+}
+.tabs p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 1em;
+    text-decoration-thickness: 3px;
+}
+.hamburger{
+    padding-left: 7%;
+    display: none;
+}
+.tabs{
+    display: inline-block;
+    width: 80%;
+    float: right;
+}
+.tabs p{
+    font-weight: 700;
+    display: inline-block;
+    margin: 5px 15px;
+    width: 10%;
+}
+.slide-tabs{
+    padding: 13% 7%;
+    background-color: white;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+.slide-tabs img{
+    padding-right: 15%;
+}
+.slide-tabs p{
+    padding: 0 9%;
+    display: inline-block;
+    color: black;
+    width: 10%;
+}
+.img-div{
+    width: 62%;
+    position: relative;
+}
+.desktop{
+    width: 100%;
+}
+.mobile{
+    display: none;
+}
+.content{
+    width: 38%;
+    padding: 8% 6% 0 6%;
+    margin-bottom: 0;
+}
+.arrow{
+    padding: inherit;
+    position: absolute;
+    right: -120px;
+    bottom: 0;
+}
+.arrow img{
+    float: left;
+    padding: 20px 25px;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+}
+.arrow img:hover{
+    background-color: hsl(0, 0%, 27%);
+    cursor: pointer;
+}
+.shop-now{
+    display: inline-block;
+    padding: 3% 0;
+    color: black;
+}
+.shop-now:hover{
+ color: hsl(0, 0%, 63%);
+}
+.shop-now img{
+    float: right;
+    margin-left: 15px;
+}
+.about-para{
+    width: 40%;
+    padding: 4% 2%;
+}
+.about img{
+    width: 30%;
+}
+@media(max-width:1000px){
+    .content1,.content2,.content3{
+        display: block;
+    }
+    .arrow{
+        right: 0;
+        bottom: 0;
+    }
+    .img-div,.content{
+        width: 100%;
+    }
+    .content{
+        padding: 5% 12%;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .tabs p{
+        display: none;
+    }
+    .logo{
+        padding-left: 33%;
+        margin: auto;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+    .about{
+        display: block;
+    }
+    .about-para,.about img{
+        width: 100%;
+    }
+    .about-para{
+        padding: 8% 12%;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 100%;
+    }
+    .nav-img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,122 @@
+body{
+  background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1{
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+
+p{
+  color: hsl(237, 12%, 33%);
+}
+
+hr{
+  width: 100%;
+}
+
+.maincard{
+  margin: 10% auto;
+  width: 70%;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.col1 {
+  padding: 5% 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.col2 {
+  padding: 5%;
+  padding-right: 10%;
+}
+
+.woman{
+  position: relative;
+  top: 10px;
+  left:-80px;
+}
+
+.box{
+  position: absolute;
+  width: 200px;
+  left: -100px;
+  top: 180px;
+  z-index: 1;
+}
+
+.hiddenPara{
+  display: none;
+  color: hsl(240, 6%, 50%);
+}
+
+.bg{
+  position: absolute;
+  left: -570px;
+  top: -320px;
+}
+
+.cont {
+  transition: 1s;
+}
+
+.arrow{
+  float: right;
+}
+
+@media (max-width:992px) {
+  h1{
+    position: relative;
+    text-align: center;
+    padding: 15%;
+    z-index: 1;
+  }
+  
+  p{
+    color: hsl(237, 12%, 33%);
+  }
+  
+  .maincard{
+    margin: 40% auto auto;
+    width: 80%;
+  }
+  
+  .col1 {
+    padding: 50px;
+    overflow: visible;
+  }
+  
+  .col2 {
+    padding: 7%;
+  }
+  
+  .woman{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: -150px;
+    margin: 0 auto;
+  }
+  
+  .box{
+    position: absolute;
+    width: 30%;
+    left: 10%;
+    top: -55px;
+  }
+  
+  .bg{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: -180px;
+  }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Frontend Mentor | Room homepage</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <a href="../../index.html"><button type="button" class="btn btn-sm btn-outline-secondary" style="z-index: 1000; position: absolute; bottom: 10px; left: 10px;">Go back</button></a>
+
+  <div class="nav-bar">
+    <div class="nav-img">
+      <img src="images/icon-hamburger.svg" alt="" class="hamburger">
+      <img src="images/logo.svg" alt="" class="logo">
+    </div>
+    <div class="tabs">
+      <p>home</p>
+      <p>shop</p>
+      <p>about</p>
+      <p>contact</p>
+    </div>
+    <div class="slide-tabs">
+      <img src="images/icon-close.svg" alt="">
+      <p>home</p>
+      <p>shop</p>
+      <p>about</p>
+      <p>contact</p>
+    </div>
+    <span class="hover"></span>
+  </div>
+  <div class="para">
+    <div class="row content1">
+      <div class="img-div col-lg-6">
+        <img src="images/desktop-image-hero-1.jpg" alt="" class="desktop">
+        <img src="images/mobile-image-hero-1.jpg" alt="" class="mobile">
+        <div class="arrow">
+          <a><img src="images/icon-angle-left.svg" alt="" class="left"></a>
+          <a><img src="images/icon-angle-right.svg" alt="" class="right"></a>
+        </div>
+      </div>
+      <div class="content col-lg-6">
+        <h2>Discover innovative ways to decorate</h2>
+        <p>We provide unmatched quality, comfort, and style for property owners across the country. 
+          Our experts combine form and function in bringing your vision to life. Create a room in your 
+          own style with our collection and make your property a reflection of you and what you love.</p>
+        <div class="shop-now">
+          <p style="letter-spacing: 15px;float: left;">SHOP NOW</p>
+          <img src="images/icon-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row content2">
+      <div class="img-div col-lg-6">
+        <img src="images/desktop-image-hero-2.jpg" alt="" class="desktop">
+        <img src="images/mobile-image-hero-2.jpg" alt="" class="mobile">
+        <div class="arrow">
+          <a><img src="images/icon-angle-left.svg" alt="" class="left"></a>
+          <a><img src="images/icon-angle-right.svg" alt="" class="right"></a>
+        </div>
+      </div>
+      <div class="content col-lg-6">
+        <h2>We are available all across the globe</h2>
+        <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+          Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+          store locator. Any questions? Don't hesitate to contact us today.</p>
+        <div class="shop-now">
+          <p style="letter-spacing: 15px;float: left;">SHOP NOW</p>
+          <img src="images/icon-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row content3">
+      <div class="img-div col-lg-6">
+        <img src="images/desktop-image-hero-3.jpg" alt="" class="desktop">
+        <img src="images/mobile-image-hero-3.jpg" alt="" class="mobile">
+        <div class="arrow">
+          <a><img src="images/icon-angle-left.svg" alt="" class="left"></a>
+          <a><img src="images/icon-angle-right.svg" alt="" class="right"></a>
+        </div>
+      </div>
+      <div class="content col-lg-6">
+        <h2>Manufactured with the best materials</h2>
+        <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+          to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+          experience in this industry, we understand what customers want for their home and office.</p>
+        <div class="shop-now">
+          <p style="letter-spacing: 15px;float: left;">SHOP NOW</p>
+          <img src="images/icon-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="row about">
+    <img src="images/image-about-dark.jpg" alt="" class="col-lg-4"> 
+    <div class="about-para col-lg-4">
+      <h4>About our furniture</h4>
+      <p>Our multifunctional collection blends design and function to suit your individual taste.
+      Make each room unique, or pick a cohesive theme that best express your interests and what
+      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+      or anything in between. Product specialists are available to help you create your dream space.</p>
+    </div>
+    <img src="images/image-about-light.jpg" alt="" class="col-lg-4">
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script>
+    var id=1;
+    $(".content2,.content3").hide();
+    $(document).ready(function(){
+      $(".right").click(function(event){
+        id=id+1;
+        if(parseInt(id)==4){
+          id=1;
+        }
+        console.log(id);
+        $(".content1,.content2,.content3").hide();
+        $(".content"+JSON.stringify(id)).show();
+      });
+      $(".left").click(function(){
+        id=id-1;
+        if(parseInt(id)==0){
+          id=3;
+        }
+        console.log(id);
+        $(".content1,.content2,.content3").hide();
+        $(".content"+JSON.stringify(id)).show();
+        
+        
+      });
+      $(".hamburger").click(function(){
+        $(".nav-img").hide();
+        $(".slide-tabs").slideDown();
+      });
+      $(".slide-tabs img").click(function(){
+        $(".slide-tabs").slideUp();
+        $(".nav-img").show();
+      });
+    });
+      
+    
+      
+  
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

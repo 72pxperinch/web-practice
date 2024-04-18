@@ -1,0 +1,151 @@
+body{
+  background-color: hsl(229, 57%, 11%);
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+.background{
+  background-image: url(../images/bg-desktop.png);
+  background-size: 100% 100%;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  z-index: -1;
+}
+.bg-image{
+  position: absolute;
+  bottom: 0;
+}
+.outer-container{
+  margin: 15% auto;
+  width: 72%;
+}
+.logo-container{
+  border-radius: 15px 120px 15px 15px;
+  padding: 50px;
+  width: 36%;
+  height: 23%;
+  background-color: hsl(228, 56%, 26%);
+}
+.logo{
+  position: relative;
+  display: block;
+}
+.icons-collection{
+  display: inline-flex;
+}
+.icon{
+  margin: 30px 20px 0 0;
+  background-color: hsl(229, 57%, 11%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: hsl(229, 57%, 11%);
+  border-image: initial;
+  border-radius: 10px;
+  padding: 5px;
+}
+.storage{
+  position: relative;
+  width: 55%;
+  margin: auto;
+  height: 20%;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 15px;
+  color: hsl(243, 100%, 93%);
+  font-size: 14px;
+  padding: 40px;
+  margin-bottom: 0;
+}
+.scrollbar{
+  background-color: hsl(229, 57%, 11%);
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+}
+.gradient-scrollbar{
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+}
+.left-limit{
+  display: inline-block;
+  float: left;
+  padding-top: 20px;
+}
+.right-limit{
+  display: inline-block;
+  float: right;
+  padding-top: 20px;
+}
+.dot{
+  display: inline-block;
+  float: right;
+  height: 11px;
+  width: 11px;
+  border-radius: 100%;
+  background-color: white;
+  margin: 2px;
+}
+.whitebox{
+  background-color: white;
+  width: 32%;
+  height: 70px;
+  position: absolute;
+  right: 0;
+  bottom: 85%;
+  margin-right: 40px;
+  border-radius: 10px;
+}
+.special{
+  padding-right: 5px;
+  font-weight:700;
+  font-size:30px;
+  color:hsl(229, 57%, 11%);
+}
+.tooltip-text{
+  color: hsl(229, 7%, 55%);
+  padding: 10px 20px;
+}
+.arrow{
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: -20px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+}
+@media(max-width:1000px){
+  .background{
+    background-image: url(../images/bg-mobile.png);
+    height: 100%;
+  }
+  .outer-container{
+    margin: 30% 5%;
+    width: 90%;
+  }
+  .logo-container,.storage{
+    width: 100%;
+  }
+  .storage{
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .arrow{
+    display: none;
+  }
+  .whitebox{
+    position: absolute;
+    bottom: -40px;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+  }
+
+}

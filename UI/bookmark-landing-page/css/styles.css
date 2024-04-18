@@ -1,0 +1,397 @@
+body{
+    color: hsl(229, 8%, 60%);
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+h2,h4,.qn{
+    color: hsl(229, 31%, 21%);
+}
+ul{
+    padding-right: 20%;
+}
+li{
+    font-size: 14px;
+    padding: 0 8%;
+}
+.abc:hover{
+    color: hsl(0, 94%, 66%) !important;
+}
+.login-button{
+    background-color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+    border-radius: 5px;
+    
+}
+.login-button a{
+    color: white !important;
+}
+.login-button:hover{
+    background-color: white;
+}
+.login-button:hover a{
+    color: hsl(0, 94%, 66%) !important;
+}
+.logo-bookmark{
+    margin-left: 9rem;
+}
+.intro-img{
+    position: relative;
+    display: inline-block;
+}
+
+.content-img{
+    display: inline-block;
+    position: relative;
+}
+.content-img img{
+    padding: 3% 0 0 10%;
+}
+.intro-img img{
+    padding-top: 5%;
+}
+.intro{
+    padding: 7% 5% 0 11%;
+}
+.introduction{
+    margin-top: 15px;
+}
+.bg-box1{
+    width: 60%;
+    height: 220px;
+    background-color: hsl(231, 69%, 60%);
+    margin-top: 210px;
+    border-top-left-radius: 98px;
+    border-bottom-left-radius: 98px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    z-index: -1;
+}
+.bg-box2{
+    width: 60%;
+    height: 220px;
+    background-color: hsl(231, 69%, 60%);
+    margin-top: 130px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: -1;
+}
+.features{
+    padding-top: 7%;
+    text-align: center;
+    width: 33%;
+    margin: auto;
+}
+.button-section{
+    padding: 3% 0;
+    display: inline-block;
+    width: 90%;
+}
+.button1{
+    height: 50px;
+    width: 48%;
+    float: left;
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+    border-radius: 5px;
+}
+.button1:hover{
+    color: hsl(231, 69%, 60%);
+    background-color: white;
+    border-color: hsl(231, 69%, 60%);
+}
+
+.button2{
+    height: 50px;
+    width: 48%;
+    float: right;
+    color: gray;
+    background-color: ghostwhite;
+    box-shadow: 0 0 15px gainsboro;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.button2:hover{
+    color: hsl(229, 31%, 21%);
+    background-color: white;
+    border: 1px solid hsl(229, 31%, 21%);
+}
+
+.pagination {
+    display: block;
+    width: 100%;
+}
+.page-section{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    right: 25px;
+}
+  
+.pagination a {
+    color: hsl(229, 8%, 60%);
+    padding: 8px 10px 8px 10px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.pagination a.active {
+    color: hsl(229, 31%, 21%);
+}
+.pagination-slider{
+    margin: auto;
+    width: 40%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: whitesmoke;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius:20px;
+  }
+  .slider::-webkit-slider-thumb {
+    position: relative;
+    z-index: 2;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 33%;
+    height: 5px;
+    background-color: hsl(0, 94%, 66%);
+    cursor: pointer;
+  }
+
+.pagination a:hover:not(.active) {
+    color: hsl(0, 94%, 66%);
+}
+
+.content{ 
+    padding: 5% 2% 0 4%;
+}
+.bookmark-content{
+    padding: 5% 19% 0 3%;
+}
+.bookmark-content button{
+    width: 30%;
+}
+.download-section{
+   margin: 8% 20% 5% 20%;
+   text-align: center;
+   padding: 0 11%;
+}
+.download-cards{
+    text-align: center;
+    margin: 0 20%;
+}
+.download-cards button{
+    width: 98%;
+    margin-left: 3%;
+}
+.dcard{
+    height: fit-content;
+    padding: 3%;
+    width: 31%;
+    margin: 0 1%;
+    box-shadow: 0 0 10px 5px hsl(229, 9%, 96%);
+}
+.dcard2{
+    margin-top: 5%;
+}
+.dcard3{
+    margin-top: 10%;
+}
+.faq{
+    text-align: center;
+    margin: 7% 33% 2% 33%;
+}
+.qna{
+    width: 40%;
+    margin: 4% 30% 10% 30%;
+    padding: 0;  
+}
+.qna button{
+    width: 20%;
+    margin: 5% 0 10% 40%;
+}
+.ans{
+    display: none;
+    margin: 0 15px 10px 15px;
+}
+.arrow-para{
+    width: 100%;
+    display: inline-block;
+}
+.arrow-para img{
+    margin: 20px;
+    float: right;
+}
+.arrow-para p{
+    margin: 15px;
+    float: left;
+}
+.arrow-para:hover p{
+    color: hsl(0, 94%, 66%);
+}
+.arrow-para:hover{
+    cursor: pointer;
+}
+hr{
+    margin: 0;
+}
+.footer-container{
+    text-align: center;
+    padding: 7%;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+}
+.footer-container h2{
+    margin: 3% 30%;
+}
+#email{
+    border: 1px solid hsl(229, 8%, 60%);
+    border-radius: 5px;
+    height: 50px;
+    width: 25%;
+}
+.button3{
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border: 1px solid hsl(0, 94%, 66%);
+    border-radius: 5px;
+    font-size: 14px;
+    height: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.button3:hover{
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    border: 1px solid hsl(0, 94%, 66%);
+    border-radius: 5px;
+}
+.footer{
+    background-color: hsl(229, 31%, 21%);
+    width: 100%;
+    margin: 0;
+    text-align: right;
+    color: white;
+}
+.footer-left{
+    display: inline-block;
+    padding: 1% 2% 0 5%;
+}
+.footer-right{
+    margin-right: 12%;
+}
+.footer-right img{
+    padding: 1% 2% 0 0;
+    margin:1%;
+}
+.footer-left p{
+    float: left;
+    width: 20%;
+}
+.footer-left p:hover{
+    color: hsl(0, 94%, 66%);
+}
+.footer-left img{
+    margin-left: 0;
+    width: 20%;
+    float: left;
+}
+
+@media(max-width:1000px){
+    body{
+        text-align: center;
+    }
+    .bookmark-content{
+        padding: 25% 8%;
+    }
+    .features{
+        width: 80%;
+    }
+    .pagination{
+        padding-top: 5%;
+    }
+    .page-section,.pagination-slider{
+        font-size: 14px;
+        width: 90%;
+    }
+    .download-section{
+        margin: 0 5%;
+        padding: 2%;
+    }
+    .download-cards{
+        margin: auto;
+        display: block;
+    }
+    .dcard{
+        margin: 5% auto;
+        width: 70%;
+        height: 400px;
+    }
+    .faq{
+        margin: auto 5%;
+    }
+    .faq h2{
+        margin: 5% auto;
+        width: 70%;
+    }
+    .qna{
+        margin: 3% auto;
+        width: 90%;
+        text-align: left;
+    }
+    .text button{
+        float: none;
+        margin: auto;
+    }
+    .qna button{
+        width: 30%;
+    }
+    .footer-container{
+        clear: both;
+    }
+    .footer-container h2{
+        margin: auto;
+        padding: 5% 0;
+        width: 80%;
+    }
+    #email{
+        width: 50%;
+    }
+    .footer,.footer-left,.footer-right{
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-left{
+        padding-left: 0;
+    }
+    .footer-left p{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-left img{
+        float: none;
+        text-align: center;
+        margin: 15px auto;
+        width: 30%;
+    }
+    .footer-right{
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+    .footer-right img{
+        padding: 0;
+    }
+}

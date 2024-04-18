@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <a href="../../index.html"><button type="button" class="btn btn-sm btn-outline-secondary" style="z-index: 1000; position: absolute; top: 10px; left: 10px; width: 100px; color: #fff;">Go back</button></a>
+
+  <div class="mainCard">
+    <div class="row">
+
+      <div class="col-lg-6 col-md-6">
+        <div class="card1">
+          <label for="dol">Bill</label><br>
+          <input class="mainInput" placeholder="0" id="dol" type="number">
+          <label class="spacing" for="tip">Select Tip %</label>
+          <div id="tips" class="row btnsRow">
+            <div class="col-lg-4 col-md-4 col-sm-6 btnsCol">
+                <button class="btn btns btn-block" name="5">5%</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 btnsCol">
+                <button class="btn btns btn-block" name="10">10%</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 btnsCol">
+                <button class="btn btns btn-block" name="15">15%</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 btnsCol">
+                <button class="btn btns btn-block" name="25">25%</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 btnsCol">
+                <button class="btn btns btn-block" name="50">50%</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 btnsCol">
+              <input class="mainInput" id="custom" type="number" placeholder="Custom" style="text-align: center; color: hsl(183, 100%, 15%); padding-right: 0;">
+            </div>
+          </div>
+          <label class="spacing" for="ppl">Number of People</label><br>
+          <input class="mainInput" placeholder="0" id="ppl" type="number">
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        <div class="card2">
+          <div class="botm">
+            <p class="val">$<span id="tip">0.00</span></p>
+            <p class="labl">Tip Amount</p>
+            <p class="prsn">/ person</p>
+          </div>
+          <div class="botm bottom">
+            <p class="val">$<span id="tot">0.00</span></p>
+            <p class="labl">Total</p>
+            <p class="prsn">/ person</p>
+          </div>
+          <div class="d-grid gap-2">
+            <button onclick="reset()" class="btn btn-block">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    var dol = 0;
+    var ppl = 1;
+    var tip = 0;
+    var tot;
+    var tippp;
+    var totpp;
+    $("#dol").on("input",function(){
+      dol = parseInt($(this).val());
+      if (isNaN(dol)){
+        dol = 0;
+      }
+      calculate();
+    });
+    $("#custom").on("input",function(){
+      tip = parseInt($(this).val());
+      if (isNaN(tip)){
+        tip = 0;
+      }
+      calculate();
+    });
+    $("#ppl").on("input",function(){
+      ppl = parseInt($(this).val());
+      if (isNaN(ppl)){
+        ppl = 1;
+      }
+      calculate();
+    });
+    $(".btns").click(function(){
+      tip = parseInt($(this).attr("name"));
+      calculate();
+    })
+    
+    function calculate(){
+      tot = (1 + tip * 0.01) * dol;
+      tippp = ((tip * 0.01) * dol)/ppl;
+      totpp = tot/ppl
+      $("#tip").text(Math.round(tippp * 100) / 100)
+      $("#tot").text(Math.round(totpp * 100) / 100)
+    }
+
+    function reset(){
+      dol = 0;
+      ppl = 1;
+      tip = 0;
+      $("#ppl").val("");
+      $("#dol").val("");
+      $("#custom").val("");
+      calculate()
+    }
+  </script>
+</body>
+</html>

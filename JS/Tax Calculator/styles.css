@@ -1,0 +1,116 @@
+.card-body {
+    max-width: 450px;
+    width: 50vw;
+    min-width: 300px;
+    padding: 72px 40px 40px;
+}
+
+.form-control {
+    position: relative;
+    top: -7px;
+}
+
+.tooltip-box {
+    position: relative;
+}
+
+.invalid-feedback {
+    position: absolute;
+    right: -3px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    z-index: 100;
+}
+
+.question-mark {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 5px;
+    font-size: small;
+    border: 1px solid black;
+    position: relative;
+    left: -5px;
+}
+
+.gues-tooltip {
+    position: absolute;
+    right: -10px;
+    top: 3px;
+    width: 30px;
+    height: 20px;
+    margin: 0;
+    z-index: 100;
+}
+
+label {
+    position: relative;
+}
+
+.btn {
+    margin-top: 35px;
+    background-color: rgb(98, 43, 226);
+    border: 0;
+}
+
+#resultModal {
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-dialog {
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.modal-dialog p {
+    font-size: small;
+}
+
+
+.modal-content {
+    max-width: 500px;
+    width: 60vw;
+    min-width: 300px;
+    height: 300px;
+    padding: 72px;
+    text-align: center;
+}
+
+.modal-footer {
+    margin-top: 20px; /* Adjust as needed */
+    text-align: center;
+}
+
+.modal-close {
+    width: 100px;
+    margin: auto;
+}
+
+.modal-body {
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+    .card-body {
+        padding: 50px 20px;
+        width: 80vw;
+    }
+    .modal-dialog {
+        max-width: 90%;
+    }
+    .modal-content {
+        width: 80vw;
+    }
+}
